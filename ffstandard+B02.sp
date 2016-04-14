@@ -206,10 +206,10 @@ Xitcb19 vdd D0 D1 D2 In Q019 Q119 Q219 Out19 ITC99B02
 ***************************
 * SOURCES
 ***************************
-V_Vdd vdd 0 1V
+V_Vdd vdd_package 0 1V
 
-*R1 vdd_package int 4m
-*L1 int vdd 72p
+R1 vdd_package int 6m
+L1 int vdd 72p
 
 V_Vss vss 0 0V
 V_d0 D0 0 PULSE 0 1V 2.968787ns 0.01ns 0.005ns 1ns 2ns
