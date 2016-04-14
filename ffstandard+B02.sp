@@ -18,6 +18,7 @@ MP1 out in vdd vdd CMOSP W='wp*3' L=lp AD='3*wp*lp' AS='3*wp*ln' PD='2*wp+2*ln' 
 MN1 out in vss vss CMOSN W='wn*3' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
+
 ***************************
 * INVERTITORE DEBOLE
 ***************************
@@ -138,7 +139,7 @@ XINV vdd vss nodeInv out INVW
 * ITC'99 B02
 ***************************
 .SUBCKT ITC99B02 vdd D0 D1 D2 In Q0 Q1 Q2 Out
-XU4 VDD 0 D0 D1 N001 Out NOR3X
+XU4 VDD 0 D0 D1 N001 Out_pre NOR3X
 XU5 VDD 0 N004 D2 N006 OR
 XU6 VDD 0 N004 In N010 OR
 XU7 VDD 0 D1 In N011 OR_2
@@ -157,13 +158,13 @@ XU17 VDD 0 N012 D0 N013 NAND
 XU18 VDD 0 N016 N004 N017 NAND_2
 XU12 VDD 0 N005 N004 N007 NAND_2
 XU19 VDD 0 N009 D2 N008 NAND_2
-XU20 VDD 0 N013 N014 Q1 NAND_5
-XU21 VDD 0 N017 N018 Q0 NAND_3
-XU22 VDD 0 N003 N007 N008 Q2 NAND3X_3
-XINV0 VDD 0 Q0 testOut0 INV
-XINV1 VDD 0 Q1 testOut1 INV
-XINV2 VDD 0 Q2 testOut2 INV
-XINV3 VDD 0 Out testOut3 INV
+XU20 VDD 0 N013 N014 Q1_pre NAND_5
+XU21 VDD 0 N017 N018 Q0_pre NAND_3
+XU22 VDD 0 N003 N007 N008 Q2_pre NAND3X_3
+XBUFF0 VDD 0 Out_pre Out buffer10
+XBUFF1 VDD 0 Q0_pre Q0 buffer10
+XBUFF2 VDD 0 Q1_pre Q1 buffer10
+XBUFF3 VDD 0 Q2_pre Q2 buffer10
 .ENDS
 
 
@@ -177,6 +178,20 @@ MN1 o1 in vss vss CMOSN W='wn*2' L=ln  *5
 MP2 out o1 vdd vdd CMOSP W='wp*1' L=lp *n42
 MN2 out o1 vss vss CMOSN W='wn*1' L=ln *10
 .ENDS
+
+.SUBCKT buffer10 vdd vss in out
+XINV0 vdd vss in n0 INVW
+XINV1 vdd vss n0 n1 INVW
+XINV2 vdd vss n1 n2 INVW
+XINV3 vdd vss n2 n3 INVW
+XINV4 vdd vss n3 n4 INVW
+XINV5 vdd vss n4 n5 INVW
+XINV6 vdd vss n5 n6 INVW
+XINV7 vdd vss n6 n7 INVW
+XINV8 vdd vss n7 n8 INVW
+XINV9 vdd vss n8 out INVW
+.ENDS
+
 
 
 
@@ -212,14 +227,14 @@ Xitcb19 vdd D0 D1 D2 In Q019 Q119 Q219 Out19 ITC99B02
 ***************************
 V_Vdd vdd_package 0 1V
 
-R1 vdd_package int 8m
-L1 int vdd 144p
+R1 vdd_package int 32m
+L1 int vdd 576p
 
 V_Vss vss 0 0V
-V_d0 D0 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 1ns 2ns
-V_d1 D1 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 2ns 4ns
-V_d2 D2 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 4ns 8ns
-V_in In 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 8ns 16ns
+V_in In 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 1ns 2ns
+V_d0 D0 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 2ns 4ns
+V_d1 D1 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 4ns 8ns
+V_d2 D2 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 8ns 16ns
 
 
 
