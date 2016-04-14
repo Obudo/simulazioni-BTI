@@ -1,0 +1,288 @@
+Title: *Flip-flop standard
+Date: Thu Apr 14 15:55:29 2016
+Plotname: Operating Point
+Flags: real
+No. Variables: 276
+No. Points:            1
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Variables:
+	0	V(d0)	voltage
+	1	V(vdd)	voltage
+	2	V(d1)	voltage
+	3	V(out00)	voltage
+	4	V(d2)	voltage
+	5	V(in)	voltage
+	6	V(q100)	voltage
+	7	V(q000)	voltage
+	8	V(q200)	voltage
+	9	V(out01)	voltage
+	10	V(q101)	voltage
+	11	V(q001)	voltage
+	12	V(q201)	voltage
+	13	V(out02)	voltage
+	14	V(q102)	voltage
+	15	V(q002)	voltage
+	16	V(q202)	voltage
+	17	V(out03)	voltage
+	18	V(q103)	voltage
+	19	V(q003)	voltage
+	20	V(q203)	voltage
+	21	V(out04)	voltage
+	22	V(q104)	voltage
+	23	V(q004)	voltage
+	24	V(q204)	voltage
+	25	V(out05)	voltage
+	26	V(q105)	voltage
+	27	V(q005)	voltage
+	28	V(q205)	voltage
+	29	V(out06)	voltage
+	30	V(q106)	voltage
+	31	V(q006)	voltage
+	32	V(q206)	voltage
+	33	V(out07)	voltage
+	34	V(q107)	voltage
+	35	V(q007)	voltage
+	36	V(q207)	voltage
+	37	V(out08)	voltage
+	38	V(q108)	voltage
+	39	V(q008)	voltage
+	40	V(q208)	voltage
+	41	V(out09)	voltage
+	42	V(q109)	voltage
+	43	V(q009)	voltage
+	44	V(q209)	voltage
+	45	V(out10)	voltage
+	46	V(q110)	voltage
+	47	V(q010)	voltage
+	48	V(q210)	voltage
+	49	V(out11)	voltage
+	50	V(q111)	voltage
+	51	V(q011)	voltage
+	52	V(q211)	voltage
+	53	V(out12)	voltage
+	54	V(q112)	voltage
+	55	V(q012)	voltage
+	56	V(q212)	voltage
+	57	V(out13)	voltage
+	58	V(q113)	voltage
+	59	V(q013)	voltage
+	60	V(q213)	voltage
+	61	V(out14)	voltage
+	62	V(q114)	voltage
+	63	V(q014)	voltage
+	64	V(q214)	voltage
+	65	V(out15)	voltage
+	66	V(q115)	voltage
+	67	V(q015)	voltage
+	68	V(q215)	voltage
+	69	V(out16)	voltage
+	70	V(q116)	voltage
+	71	V(q016)	voltage
+	72	V(q216)	voltage
+	73	V(out17)	voltage
+	74	V(q117)	voltage
+	75	V(q017)	voltage
+	76	V(q217)	voltage
+	77	V(out18)	voltage
+	78	V(q118)	voltage
+	79	V(q018)	voltage
+	80	V(q218)	voltage
+	81	V(out19)	voltage
+	82	V(q119)	voltage
+	83	V(q019)	voltage
+	84	V(q219)	voltage
+	85	V(vdd_package)	voltage
+	86	V(int)	voltage
+	87	V(vss)	voltage
+	88	I(L1)	device_current
+	89	I(R1)	device_current
+	90	I(V_d2)	device_current
+	91	I(V_d1)	device_current
+	92	I(V_d0)	device_current
+	93	I(V_in)	device_current
+	94	I(V_vss)	device_current
+	95	I(V_vdd)	device_current
+	96	Ix(itcb00:VDD)	subckt_current
+	97	Ix(itcb00:D0)	subckt_current
+	98	Ix(itcb00:D1)	subckt_current
+	99	Ix(itcb00:D2)	subckt_current
+	100	Ix(itcb00:IN)	subckt_current
+	101	Ix(itcb00:Q0)	subckt_current
+	102	Ix(itcb00:Q1)	subckt_current
+	103	Ix(itcb00:Q2)	subckt_current
+	104	Ix(itcb00:OUT)	subckt_current
+	105	Ix(itcb01:VDD)	subckt_current
+	106	Ix(itcb01:D0)	subckt_current
+	107	Ix(itcb01:D1)	subckt_current
+	108	Ix(itcb01:D2)	subckt_current
+	109	Ix(itcb01:IN)	subckt_current
+	110	Ix(itcb01:Q0)	subckt_current
+	111	Ix(itcb01:Q1)	subckt_current
+	112	Ix(itcb01:Q2)	subckt_current
+	113	Ix(itcb01:OUT)	subckt_current
+	114	Ix(itcb02:VDD)	subckt_current
+	115	Ix(itcb02:D0)	subckt_current
+	116	Ix(itcb02:D1)	subckt_current
+	117	Ix(itcb02:D2)	subckt_current
+	118	Ix(itcb02:IN)	subckt_current
+	119	Ix(itcb02:Q0)	subckt_current
+	120	Ix(itcb02:Q1)	subckt_current
+	121	Ix(itcb02:Q2)	subckt_current
+	122	Ix(itcb02:OUT)	subckt_current
+	123	Ix(itcb03:VDD)	subckt_current
+	124	Ix(itcb03:D0)	subckt_current
+	125	Ix(itcb03:D1)	subckt_current
+	126	Ix(itcb03:D2)	subckt_current
+	127	Ix(itcb03:IN)	subckt_current
+	128	Ix(itcb03:Q0)	subckt_current
+	129	Ix(itcb03:Q1)	subckt_current
+	130	Ix(itcb03:Q2)	subckt_current
+	131	Ix(itcb03:OUT)	subckt_current
+	132	Ix(itcb04:VDD)	subckt_current
+	133	Ix(itcb04:D0)	subckt_current
+	134	Ix(itcb04:D1)	subckt_current
+	135	Ix(itcb04:D2)	subckt_current
+	136	Ix(itcb04:IN)	subckt_current
+	137	Ix(itcb04:Q0)	subckt_current
+	138	Ix(itcb04:Q1)	subckt_current
+	139	Ix(itcb04:Q2)	subckt_current
+	140	Ix(itcb04:OUT)	subckt_current
+	141	Ix(itcb05:VDD)	subckt_current
+	142	Ix(itcb05:D0)	subckt_current
+	143	Ix(itcb05:D1)	subckt_current
+	144	Ix(itcb05:D2)	subckt_current
+	145	Ix(itcb05:IN)	subckt_current
+	146	Ix(itcb05:Q0)	subckt_current
+	147	Ix(itcb05:Q1)	subckt_current
+	148	Ix(itcb05:Q2)	subckt_current
+	149	Ix(itcb05:OUT)	subckt_current
+	150	Ix(itcb06:VDD)	subckt_current
+	151	Ix(itcb06:D0)	subckt_current
+	152	Ix(itcb06:D1)	subckt_current
+	153	Ix(itcb06:D2)	subckt_current
+	154	Ix(itcb06:IN)	subckt_current
+	155	Ix(itcb06:Q0)	subckt_current
+	156	Ix(itcb06:Q1)	subckt_current
+	157	Ix(itcb06:Q2)	subckt_current
+	158	Ix(itcb06:OUT)	subckt_current
+	159	Ix(itcb07:VDD)	subckt_current
+	160	Ix(itcb07:D0)	subckt_current
+	161	Ix(itcb07:D1)	subckt_current
+	162	Ix(itcb07:D2)	subckt_current
+	163	Ix(itcb07:IN)	subckt_current
+	164	Ix(itcb07:Q0)	subckt_current
+	165	Ix(itcb07:Q1)	subckt_current
+	166	Ix(itcb07:Q2)	subckt_current
+	167	Ix(itcb07:OUT)	subckt_current
+	168	Ix(itcb08:VDD)	subckt_current
+	169	Ix(itcb08:D0)	subckt_current
+	170	Ix(itcb08:D1)	subckt_current
+	171	Ix(itcb08:D2)	subckt_current
+	172	Ix(itcb08:IN)	subckt_current
+	173	Ix(itcb08:Q0)	subckt_current
+	174	Ix(itcb08:Q1)	subckt_current
+	175	Ix(itcb08:Q2)	subckt_current
+	176	Ix(itcb08:OUT)	subckt_current
+	177	Ix(itcb09:VDD)	subckt_current
+	178	Ix(itcb09:D0)	subckt_current
+	179	Ix(itcb09:D1)	subckt_current
+	180	Ix(itcb09:D2)	subckt_current
+	181	Ix(itcb09:IN)	subckt_current
+	182	Ix(itcb09:Q0)	subckt_current
+	183	Ix(itcb09:Q1)	subckt_current
+	184	Ix(itcb09:Q2)	subckt_current
+	185	Ix(itcb09:OUT)	subckt_current
+	186	Ix(itcb10:VDD)	subckt_current
+	187	Ix(itcb10:D0)	subckt_current
+	188	Ix(itcb10:D1)	subckt_current
+	189	Ix(itcb10:D2)	subckt_current
+	190	Ix(itcb10:IN)	subckt_current
+	191	Ix(itcb10:Q0)	subckt_current
+	192	Ix(itcb10:Q1)	subckt_current
+	193	Ix(itcb10:Q2)	subckt_current
+	194	Ix(itcb10:OUT)	subckt_current
+	195	Ix(itcb11:VDD)	subckt_current
+	196	Ix(itcb11:D0)	subckt_current
+	197	Ix(itcb11:D1)	subckt_current
+	198	Ix(itcb11:D2)	subckt_current
+	199	Ix(itcb11:IN)	subckt_current
+	200	Ix(itcb11:Q0)	subckt_current
+	201	Ix(itcb11:Q1)	subckt_current
+	202	Ix(itcb11:Q2)	subckt_current
+	203	Ix(itcb11:OUT)	subckt_current
+	204	Ix(itcb12:VDD)	subckt_current
+	205	Ix(itcb12:D0)	subckt_current
+	206	Ix(itcb12:D1)	subckt_current
+	207	Ix(itcb12:D2)	subckt_current
+	208	Ix(itcb12:IN)	subckt_current
+	209	Ix(itcb12:Q0)	subckt_current
+	210	Ix(itcb12:Q1)	subckt_current
+	211	Ix(itcb12:Q2)	subckt_current
+	212	Ix(itcb12:OUT)	subckt_current
+	213	Ix(itcb13:VDD)	subckt_current
+	214	Ix(itcb13:D0)	subckt_current
+	215	Ix(itcb13:D1)	subckt_current
+	216	Ix(itcb13:D2)	subckt_current
+	217	Ix(itcb13:IN)	subckt_current
+	218	Ix(itcb13:Q0)	subckt_current
+	219	Ix(itcb13:Q1)	subckt_current
+	220	Ix(itcb13:Q2)	subckt_current
+	221	Ix(itcb13:OUT)	subckt_current
+	222	Ix(itcb14:VDD)	subckt_current
+	223	Ix(itcb14:D0)	subckt_current
+	224	Ix(itcb14:D1)	subckt_current
+	225	Ix(itcb14:D2)	subckt_current
+	226	Ix(itcb14:IN)	subckt_current
+	227	Ix(itcb14:Q0)	subckt_current
+	228	Ix(itcb14:Q1)	subckt_current
+	229	Ix(itcb14:Q2)	subckt_current
+	230	Ix(itcb14:OUT)	subckt_current
+	231	Ix(itcb15:VDD)	subckt_current
+	232	Ix(itcb15:D0)	subckt_current
+	233	Ix(itcb15:D1)	subckt_current
+	234	Ix(itcb15:D2)	subckt_current
+	235	Ix(itcb15:IN)	subckt_current
+	236	Ix(itcb15:Q0)	subckt_current
+	237	Ix(itcb15:Q1)	subckt_current
+	238	Ix(itcb15:Q2)	subckt_current
+	239	Ix(itcb15:OUT)	subckt_current
+	240	Ix(itcb16:VDD)	subckt_current
+	241	Ix(itcb16:D0)	subckt_current
+	242	Ix(itcb16:D1)	subckt_current
+	243	Ix(itcb16:D2)	subckt_current
+	244	Ix(itcb16:IN)	subckt_current
+	245	Ix(itcb16:Q0)	subckt_current
+	246	Ix(itcb16:Q1)	subckt_current
+	247	Ix(itcb16:Q2)	subckt_current
+	248	Ix(itcb16:OUT)	subckt_current
+	249	Ix(itcb17:VDD)	subckt_current
+	250	Ix(itcb17:D0)	subckt_current
+	251	Ix(itcb17:D1)	subckt_current
+	252	Ix(itcb17:D2)	subckt_current
+	253	Ix(itcb17:IN)	subckt_current
+	254	Ix(itcb17:Q0)	subckt_current
+	255	Ix(itcb17:Q1)	subckt_current
+	256	Ix(itcb17:Q2)	subckt_current
+	257	Ix(itcb17:OUT)	subckt_current
+	258	Ix(itcb18:VDD)	subckt_current
+	259	Ix(itcb18:D0)	subckt_current
+	260	Ix(itcb18:D1)	subckt_current
+	261	Ix(itcb18:D2)	subckt_current
+	262	Ix(itcb18:IN)	subckt_current
+	263	Ix(itcb18:Q0)	subckt_current
+	264	Ix(itcb18:Q1)	subckt_current
+	265	Ix(itcb18:Q2)	subckt_current
+	266	Ix(itcb18:OUT)	subckt_current
+	267	Ix(itcb19:VDD)	subckt_current
+	268	Ix(itcb19:D0)	subckt_current
+	269	Ix(itcb19:D1)	subckt_current
+	270	Ix(itcb19:D2)	subckt_current
+	271	Ix(itcb19:IN)	subckt_current
+	272	Ix(itcb19:Q0)	subckt_current
+	273	Ix(itcb19:Q1)	subckt_current
+	274	Ix(itcb19:Q2)	subckt_current
+	275	Ix(itcb19:OUT)	subckt_current
+Binary:
+        õÿ?    @?9        Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9@?9Qòş8¢ÿ?C9  €?õÿ?    ÷-¥7÷-¥7VT2g¾2ÿü 2.®2    ÷-¥·³$„5fÊ€°mR˜°rŞ)°X‹° íŒ ü‚Ÿ Px àş³$„5fÊ€°mR˜°rŞ)°X‹°@™# üËŸ ë  0³$„5eÊ€°mR˜°rŞ)°X‹° …Î î	  T ÀË³$„5fÊ€°mR˜°rŞ)°X‹°   à, 	Ÿ @`³$„5fÊ€°mR˜°rŞ)°X‹° Â¡ „Ÿ úÎŸ  †³$„5fÊ€°mR˜°rŞ)°X‹°Æ€  ğ,Ÿ èì ğ³$„5eÊ€°mR˜°rŞ)°X‹°@$ ìÇŸ ämŸ  ¹³$„5eÊ€°mR˜°rŞ)°X‹°ÀiËŸ È` &Ÿ  ³$„5eÊ€°mR˜°rŞ)°X‹°€0  5  `ì³$„5eÊ€°mR˜°rŞ)°X‹° ¿è XçŸ x´Ÿ €!³$„5eÊ€°mR˜°rŞ)°X‹°EE  Ü™ ™Ÿ €\³$„5eÊ€°mR˜°rŞ)°X‹°Ğ*  üŠŸ „ÖŸ  ò³$„5eÊ€°mR˜°rŞ)°X‹°P«?  `Ÿ ˆ° À,³$„5eÊ€°mR˜°rŞ)°X‹°ğ|K  €ÜŸ lzŸ  ò³$„5eÊ€°mR˜°rŞ)°X‹° ‰ 8ÂŸ `Ç  ?³$„5fÊ€°mR˜°rŞ)°X‹°`
+İ €m  `Æ³$„5eÊ€°mR˜°rŞ)°X‹°€”1 â<  ˆ `³$„5eÊ€°mR˜°rŞ)°X‹°@¾< H;  f à‹³$„5eÊ€°mR˜°rŞ)°X‹°0„  äÁ LzŸ àé³$„5eÊ€°mR˜°rŞ)°X‹° óà ĞÉ :› @Ã
