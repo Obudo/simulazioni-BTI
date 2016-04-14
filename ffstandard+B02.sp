@@ -9,21 +9,21 @@
 * INVERTITOR CONDUCTIVO
 ***************************
 .SUBCKT INV vdd vss in out
-MP1 out in vdd vdd CMOSP W='wp*2' L=lp
-MN1 out in vss vss CMOSN W='wn*2' L=ln
+MP1 out in vdd vdd CMOSP W='wp*2' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in vss vss CMOSN W='wn*2' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 .SUBCKT INV_3 vdd vss in out
-MP1 out in vdd vdd CMOSP W='wp*3' L=lp
-MN1 out in vss vss CMOSN W='wn*3' L=ln
+MP1 out in vdd vdd CMOSP W='wp*3' L=lp AD='3*wp*lp' AS='3*wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in vss vss CMOSN W='wn*3' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 ***************************
 * INVERTITORE DEBOLE
 ***************************
 .SUBCKT INVW vdd vss in out
-MP1 out in vdd vdd CMOSP W='wp*1' L=lp
-MN1 out in vss vss CMOSN W='wn*1' L=ln
+MP1 out in vdd vdd CMOSP W='wp*1' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in vss vss CMOSN W='wn*1' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 
@@ -31,31 +31,31 @@ MN1 out in vss vss CMOSN W='wn*1' L=ln
 * NAND
 ***************************
 .SUBCKT NAND vdd vss in1 in2 out
-MP1 out in1 vdd vdd CMOSP W='wp*1' L=lp
-MP2 out in2 vdd vdd CMOSP W='wp*1' L=lp
-MN1 out in1 nodeN nodeN CMOSN W='wn*2' L=ln
-MN2 nodeN in2 vss vss CMOSN W='wn*2' L=ln
+MP1 out in1 vdd vdd CMOSP W='wp*1' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 vdd vdd CMOSP W='wp*1' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 nodeN nodeN CMOSN W='wn*2' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 nodeN in2 vss vss CMOSN W='wn*2' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 .SUBCKT NAND_2 vdd vss in1 in2 out
-MP1 out in1 vdd vdd CMOSP W='wp*2' L=lp
-MP2 out in2 vdd vdd CMOSP W='wp*2' L=lp
-MN1 out in1 nodeN nodeN CMOSN W='wn*4' L=ln
-MN2 nodeN in2 vss vss CMOSN W='wn*4' L=ln
+MP1 out in1 vdd vdd CMOSP W='wp*2' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 vdd vdd CMOSP W='wp*2' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 nodeN nodeN CMOSN W='wn*4' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 nodeN in2 vss vss CMOSN W='wn*4' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 .SUBCKT NAND_3 vdd vss in1 in2 out
-MP1 out in1 vdd vdd CMOSP W='wp*3' L=lp
-MP2 out in2 vdd vdd CMOSP W='wp*3' L=lp
-MN1 out in1 nodeN nodeN CMOSN W='wn*6' L=ln
-MN2 nodeN in2 vss vss CMOSN W='wn*6' L=ln
+MP1 out in1 vdd vdd CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 vdd vdd CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 nodeN nodeN CMOSN W='wn*6' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 nodeN in2 vss vss CMOSN W='wn*6' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 .SUBCKT NAND_5 vdd vss in1 in2 out
-MP1 out in1 vdd vdd CMOSP W='wp*5' L=lp
-MP2 out in2 vdd vdd CMOSP W='wp*5' L=lp
-MN1 out in1 nodeN nodeN CMOSN W='wn*10' L=ln
-MN2 nodeN in2 vss vss CMOSN W='wn*10' L=ln
+MP1 out in1 vdd vdd CMOSP W='wp*5' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 vdd vdd CMOSP W='wp*5' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 nodeN nodeN CMOSN W='wn*10' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 nodeN in2 vss vss CMOSN W='wn*10' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 
@@ -64,51 +64,51 @@ MN2 nodeN in2 vss vss CMOSN W='wn*10' L=ln
 * NAND3X
 ***************************
 .SUBCKT NAND3X vdd vss in1 in2 in3 out
-MP1 out in1 vdd vdd CMOSP W='wp*1' L=lp
-MP2 out in2 vdd vdd CMOSP W='wp*1' L=lp
-MP3 out in3 vdd vdd CMOSP W='wp*1' L=lp
-MN1 out in1 nodeN1 nodeN1 CMOSN W='wn*3' L=ln
-MN2 nodeN1 in2 nodeN2 nodeN2 CMOSN W='wn*3' L=ln
-MN3 nodeN2 in3 vss vss CMOSN W='wn*3' L=ln
+MP1 out in1 vdd vdd CMOSP W='wp*1' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 vdd vdd CMOSP W='wp*1' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP3 out in3 vdd vdd CMOSP W='wp*1' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 nodeN1 nodeN1 CMOSN W='wn*3' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 nodeN1 in2 nodeN2 nodeN2 CMOSN W='wn*3' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN3 nodeN2 in3 vss vss CMOSN W='wn*3' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 .SUBCKT NAND3X_3 vdd vss in1 in2 in3 out
-MP1 out in1 vdd vdd CMOSP W='wp*3' L=lp
-MP2 out in2 vdd vdd CMOSP W='wp*3' L=lp
-MP3 out in3 vdd vdd CMOSP W='wp*3' L=lp
-MN1 out in1 nodeN1 nodeN1 CMOSN W='wn*9' L=ln
-MN2 nodeN1 in2 nodeN2 nodeN2 CMOSN W='wn*9' L=ln
-MN3 nodeN2 in3 vss vss CMOSN W='wn*9' L=ln
+MP1 out in1 vdd vdd CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 vdd vdd CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP3 out in3 vdd vdd CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 nodeN1 nodeN1 CMOSN W='wn*9' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 nodeN1 in2 nodeN2 nodeN2 CMOSN W='wn*9' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN3 nodeN2 in3 vss vss CMOSN W='wn*9' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 ***************************
 * NOR
 ***************************
 .SUBCKT NOR vdd vss in1 in2 out
-MP1 nodeP in1 vdd vdd CMOSP W='wp*2' L=lp
-MP2 out in2 nodeP nodeP CMOSP W='wp*2' L=lp
-MN1 out in1 vss vss CMOSN W='wn*1' L=ln
-MN2 out in2 vss vss CMOSN W='wn*1' L=ln
+MP1 nodeP in1 vdd vdd CMOSP W='wp*2' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 nodeP nodeP CMOSP W='wp*2' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 vss vss CMOSN W='wn*1' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 out in2 vss vss CMOSN W='wn*1' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 
 .SUBCKT NOR_2 vdd vss in1 in2 out
-MP1 nodeP in1 vdd vdd CMOSP W='wp*4' L=lp
-MP2 out in2 nodeP nodeP CMOSP W='wp*4' L=lp
-MN1 out in1 vss vss CMOSN W='wn*2' L=ln
-MN2 out in2 vss vss CMOSN W='wn*2' L=ln
+MP1 nodeP in1 vdd vdd CMOSP W='wp*4' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 out in2 nodeP nodeP CMOSP W='wp*4' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 vss vss CMOSN W='wn*2' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 out in2 vss vss CMOSN W='wn*2' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 ***************************
 * NOR3X
 ***************************
 .SUBCKT NOR3X vdd vss in1 in2 in3 out
-MP1 nodeP1 in1 vdd vdd CMOSP W='wp*3' L=lp
-MP2 nodeP2 in2 nodeP1 nodeP1 CMOSP W='wp*3' L=lp
-MP3 out in3 nodeP2 nodeP2 CMOSP W='wp*3' L=lp
-MN1 out in1 vss vss CMOSN W='wn*1' L=ln
-MN2 out in2 vss vss CMOSN W='wn*1' L=ln
-MN3 out in3 vss vss CMOSN W='wn*1' L=ln
+MP1 nodeP1 in1 vdd vdd CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP2 nodeP2 in2 nodeP1 nodeP1 CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MP3 out in3 nodeP2 nodeP2 CMOSP W='wp*3' L=lp AD='wp*lp' AS='wp*ln' PD='2*wp+2*ln' PS='2*wp+2*ln'
+MN1 out in1 vss vss CMOSN W='wn*1' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN2 out in2 vss vss CMOSN W='wn*1' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
+MN3 out in3 vss vss CMOSN W='wn*1' L=ln AD='wn*lp' AS='wn*ln' PD='2*wn+2*ln' PS='2*wn+2*ln'
 .ENDS
 
 
@@ -160,6 +160,10 @@ XU19 VDD 0 N009 D2 N008 NAND_2
 XU20 VDD 0 N013 N014 Q1 NAND_5
 XU21 VDD 0 N017 N018 Q0 NAND_3
 XU22 VDD 0 N003 N007 N008 Q2 NAND3X_3
+XINV0 VDD 0 Q0 testOut0 INV
+XINV1 VDD 0 Q1 testOut1 INV
+XINV2 VDD 0 Q2 testOut2 INV
+XINV3 VDD 0 Out testOut3 INV
 .ENDS
 
 
@@ -208,14 +212,14 @@ Xitcb19 vdd D0 D1 D2 In Q019 Q119 Q219 Out19 ITC99B02
 ***************************
 V_Vdd vdd_package 0 1V
 
-R1 vdd_package int 6m
-L1 int vdd 72p
+R1 vdd_package int 8m
+L1 int vdd 144p
 
 V_Vss vss 0 0V
-V_d0 D0 0 PULSE 0 1V 2.968787ns 0.01ns 0.005ns 1ns 2ns
-V_d1 D1 0 PULSE 0 1V 2.968787ns 0.01ns 0.005ns 2ns 4ns
-V_d2 D2 0 PULSE 0 1V 2.968787ns 0.01ns 0.005ns 4ns 8ns
-V_in In 0 PULSE 0 1V 2.968787ns 0.01ns 0.005ns 8ns 16ns
+V_d0 D0 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 1ns 2ns
+V_d1 D1 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 2ns 4ns
+V_d2 D2 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 4ns 8ns
+V_in In 0 PULSE 0 1V 1.968787ns 0.005ns 0.005ns 8ns 16ns
 
 
 
